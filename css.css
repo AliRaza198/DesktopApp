@@ -59,7 +59,7 @@ body{
 
 #subnavi{
 	float: left;
-	width: 130px;
+	width: 129px;
 	height: 40px;
 	background-color: #f6f6f6;
 	margin: 0;
@@ -79,6 +79,9 @@ body{
 	width: 509px;
 }
 
+#content p{
+	text-align: justify;
+}
 /* Navigation
 --------------------------------------------------*/
 #navi {
@@ -359,41 +362,61 @@ body{
 
  /* =========   Media Quries for Upto 730px screen  ========= */
 @media (max-width: 730px){	
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
 	#centercontainer {
-		width: 540px;
-		margin:auto;
+		/* display: flex;
+		flex-direction: column; */
+		/* width: 540px; */
+		width: 89%;
+		/* margin:auto; */
 		background-color: #f6f6f6;
-		border-left: 30px solid #f6f6f6;
+		border-left: 30px solid #250909;
 		border-right: 30px solid #f6f6f6;
 	}	
 	
 	/*========= Boxen Layout ========*/
 	
 	#headcontainer{
-		width: 540px;
+		/* width: 540px; */
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		/* justify-content: center; */
 		border-bottom: 1px solid #dbdbdb;
 	}
-	#headcontainer p img{
-		max-width: 540px;
-		width: fit-content;
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
+	#headcontainer .above_picture{
+		width: 100%;
+		text-align: right;
+		background-color: red;
 	}
-	
-	#footercontainer {
-		clear: both;
-		border-top: 1px solid #dbdbdb;
-		width: 540px;
-		padding: 5px 0px;
-		margin-top: 0px;
+	#headcontainer .image img{
+		/* max-width: 540px; */
+		width: 100%;
+		/* justify-content: center; */
+		/* width: fit-content; */
+		/* background-position: center; */
+		/* background-size: cover; */
+		/* background-repeat: no-repeat; */
+	}
+	#headcontainer #navi {
+		height: 28px;
+		/* width: 540px; */
+		width: 100%;
+		background-image: url(layout/navi_border.gif);
+		background-repeat: repeat-x;
+		list-style-type: none;
 	}
 	
 	#subnavi{
 		float: left;
-		width: 90px;
-		height: 40px;
-		background-color: #f6f6f6;
+		/* width: 90px; */
+		width: 20%;
+		height: 50vh;
+		/* background-color: #f6f6f6; */
+		background-color: red;
 		margin: 0;
 		list-style-type: none;
 		white-space: nowrap;
@@ -407,11 +430,15 @@ body{
 		border-left: 1px solid #dbdbdb;
 		background-color: #f6f6f6;
 		float: left;
-		width: 447px;
+		/* width: 447px; */
+		width: 80%;
+		box-sizing: border-box;
+
 		
 	} 
 	#content p{
-		width: 418px;
+		/* width: 418px; */
+		/* padding: 10px ; */
 		text-align: justify;
 
 	}
@@ -424,92 +451,18 @@ body{
 		display: block;
 		margin: 10px 0px 10px 30px;
 	}
-	/*========= Navigation ========*/
-#navi {
-	height: 28px;
-	width: 540px;
-	background-image: url(layout/navi_border.gif);
-	background-repeat: repeat-x;
-	list-style-type: none;
-}
-
-}
-
-/* =========   Media Quries for Upto 620px screen  ========= */
-@media (max-width: 620px){	
-	#centercontainer {
-		width: 450px;
-		height: 100vh;
-		margin:auto;
-		background-color: #f6f6f6;
-		border-left: 20px solid #f6f6f6;
-		border-right: 20px solid #f6f6f6;
-	}	
-	
-	/*========= Boxen Layout ========*/
-	
-	#headcontainer{
-		width: 450px;
-		border-bottom: 1px solid #dbdbdb;
-	}
-	#headcontainer p img{
-		max-width: 450px;
-		width: fit-content;
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	
 	#footercontainer {
 		clear: both;
 		border-top: 1px solid #dbdbdb;
-		width: 450px;
+		/* width: 540px; */
+		width: 100%;
 		padding: 5px 0px;
 		margin-top: 0px;
 	}
 	
-	#subnavi{
-		float: left;
-		width: 70px;
-		height: 40px;
-		background-color: #f6f6f6;
-		margin: 0;
-		list-style-type: none;
-		white-space: nowrap;
-		font-size: 11px;
-		font-family: Helvetica, Verdana, Arial, sans-serif;
-		color: black;
-		text-decoration: none;
-	}
 	
-	#content{
-		border-left: 1px solid #dbdbdb;
-		background-color: #f6f6f6;
-		float: left;
-		width: 379px;
-		
-	} 
-	#content p{
-		width: 348px;
-		text-align: justify;
-
-	}
-	.headline{
-		font-family: Georgia, "Times New Roman", Times, serif;
-		font-size: 12px;
-		font-weight: bold;
-		border-bottom: 1px solid #dbdbdb;
-		color: #313131;
-		display: block;
-		margin: 10px 0px 10px 30px;
-	}
 	/*========= Navigation ========*/
-#navi {
-	height: 28px;
-	width: 450px;
-	background-image: url(layout/navi_border.gif);
-	background-repeat: repeat-x;
-	list-style-type: none;
-}
+
 
 }
+
