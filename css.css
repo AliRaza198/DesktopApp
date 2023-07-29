@@ -1,0 +1,514 @@
+/*
+Author: David Oerter
+Author URL: http://www.pastorensohn.de/
+Version: 1
+*/
+
+/* IE und FF Nullsetzen
+--------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+p, li, h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+/* Body definieren und Content zenrieren
+--------------------------------------------------*/
+body{
+	margin:0px;
+	padding:0px;
+	background-image: url(layout/pattern.gif);
+}
+
+#centercontainer {
+	width: 640px;
+	margin: 0px auto;
+	background-color: #f6f6f6;
+	border-left: 40px solid #f6f6f6;
+	border-right: 40px solid #f6f6f6;
+}
+
+
+/* Boxen Layout
+--------------------------------------------------*/
+
+#headcontainer{
+	width: 640px;
+	border-bottom: 1px solid #dbdbdb;
+}
+#headcontainer img{
+	width:640px;
+	width: fit-content;
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#footercontainer {
+	clear: both;
+	border-top: 1px solid #dbdbdb;
+	width: 640px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 0px;
+}
+
+#subnavi{
+	float: left;
+	width: 130px;
+	height: 40px;
+	background-color: #f6f6f6;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	white-space: nowrap;
+	font-size: 11px;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	color: black;
+	text-decoration: none;
+}
+
+#content{
+	border-left: 1px solid #dbdbdb;
+	background-color: #f6f6f6;
+	float: left;
+	width: 509px;
+}
+
+/* Navigation
+--------------------------------------------------*/
+#navi {
+	height: 28px;
+	width: 640px;
+  	line-height: 20px;
+	background-image: url(layout/navi_border.gif);
+	background-repeat: repeat-x;
+	list-style-type: none;
+}
+
+#navi ul {
+	width: 640px;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+}
+
+#navi li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	white-space: nowrap;
+}
+
+#navi li a {
+	display: block;
+	width: 80px;
+	font-size: 11px;
+	text-align: center;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	background-color: #f6f6f6;
+	color: black;
+	text-decoration: none;
+	border-top: 6px solid #c5d3de;
+	list-style-type: none;
+}
+
+#navi li a:link{
+	border-top: 6px solid #c5d3de;
+	background-color: #f6f6f6;
+}
+
+#navi li a:hover{
+	border-top: 6px solid #ad7463;
+	background-color: #f6f6f6;
+	font-weight: bold;
+}
+
+#navi li a:active{
+	border-top: 6px solid #ad7463;
+	font-weight: bold;
+}
+
+/* Sub-Navigation
+--------------------------------------------------*/
+
+#subnavi ul{
+	margin: 0;
+	padding-top: 15px;
+	padding-left: 5px;
+}
+
+#subnavi li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	white-space: nowrap;
+}
+
+#subnavi li a{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	white-space: nowrap;
+	font-size: 11px;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	color: black;
+	text-decoration: none;
+}
+
+#subnavi li a:hover{
+	color: #801e03;
+}
+
+#subnavi li a:active{
+	color: #801e03;
+}
+
+/* Sprach-Wahl
+--------------------------------------------------*/
+
+.language{
+	font-size: 11px;
+	font-family: Helvetica, Verdana, Arial, sans-serif;	
+	color: gray;
+	text-decoration: none;
+}
+
+.language a{
+	font-size: 11px;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	color: gray;
+	text-decoration: none;
+}
+
+.language a:hover{
+	color: #801e03;
+}
+
+.language a:active{
+	color: #801e03;
+}
+
+/* Footer
+--------------------------------------------------*/
+.footer{
+	padding-top: 10px;
+	font-size: 11px;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	color: gray;
+	text-decoration: none;
+}
+
+/* Content
+--------------------------------------------------*/
+.headline{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-weight: bold;
+	border-bottom: 1px solid #dbdbdb;
+	color: #313131;
+	display: block;
+	margin-left: 30px;
+}
+
+.headlinenolist{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-weight: bold;
+	border-bottom: 1px solid #dbdbdb;
+	color: #313131;
+	display: block;
+	margin-left: 30px;
+	padding-top: 15px;
+}
+
+.yearsmall{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 10px;
+	color: gray;
+}
+
+.cover{
+	width: 130px;
+	margin-left: 30px;
+	float: left;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+
+.textcontainer {
+	background-color: #CCCCCC;
+}
+
+.content{
+	margin-top: 7px;
+	margin-left: 30px;	
+	display: block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color: #313131;
+}
+
+.contentmore{
+	margin-top: 7px;
+	margin-left: 50px;	
+	display: block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color: #313131;
+}
+
+.contentcredits{
+	margin-left: 170px;	
+	display: block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color: #313131;
+}
+
+.contentcreditsprojects{
+	margin-left: 50px;	
+	display: block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color: #313131;
+}
+
+.credits{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color: #313131;
+}
+
+.subline{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #313131;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+#content ul{
+	margin: 0;
+	padding-top: 15px;
+	height: 150px;
+}
+
+#content ul li{
+	list-style-type: none;
+	display: block;
+	width: 500px;
+	float: left;
+	border-top: 1px solid #dbdbdb; 
+	margin-bottom: 15px;
+}
+
+#content ul li:hover{
+	background-color: #ffffff; 
+}
+
+.anker {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color: #ad7463;
+	font-weight: bold;
+	text-align: right;
+}
+
+.anker a {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color: #ad7463;
+	font-weight: bold;
+	text-align: right;
+}
+
+.anker a:hover {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color: #313131;
+	font-weight: bold;
+	text-align: right;
+}
+
+.anker a:visited {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color: #313131;
+	font-weight: bold;
+	text-align: right;
+}
+
+.anker a:active {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color: #313131;
+	font-weight: bold;
+	text-align: right;
+}
+
+
+
+
+ /* =========   Media Quries for Upto 730px screen  ========= */
+@media (max-width: 730px){	
+	#centercontainer {
+		width: 540px;
+		margin:auto;
+		background-color: #f6f6f6;
+		border-left: 30px solid #f6f6f6;
+		border-right: 30px solid #f6f6f6;
+	}	
+	
+	/*========= Boxen Layout ========*/
+	
+	#headcontainer{
+		width: 540px;
+		border-bottom: 1px solid #dbdbdb;
+	}
+	#headcontainer p img{
+		max-width: 540px;
+		width: fit-content;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	#footercontainer {
+		clear: both;
+		border-top: 1px solid #dbdbdb;
+		width: 540px;
+		padding: 5px 0px;
+		margin-top: 0px;
+	}
+	
+	#subnavi{
+		float: left;
+		width: 90px;
+		height: 40px;
+		background-color: #f6f6f6;
+		margin: 0;
+		list-style-type: none;
+		white-space: nowrap;
+		font-size: 11px;
+		font-family: Helvetica, Verdana, Arial, sans-serif;
+		color: black;
+		text-decoration: none;
+	}
+	
+	#content{
+		border-left: 1px solid #dbdbdb;
+		background-color: #f6f6f6;
+		float: left;
+		width: 447px;
+		
+	} 
+	#content p{
+		width: 418px;
+		text-align: justify;
+
+	}
+	.headline{
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 12px;
+		font-weight: bold;
+		border-bottom: 1px solid #dbdbdb;
+		color: #313131;
+		display: block;
+		margin: 10px 0px 10px 30px;
+	}
+	/*========= Navigation ========*/
+#navi {
+	height: 28px;
+	width: 540px;
+	background-image: url(layout/navi_border.gif);
+	background-repeat: repeat-x;
+	list-style-type: none;
+}
+
+}
+
+/* =========   Media Quries for Upto 730px screen  ========= */
+@media (max-width: 620px){	
+	#centercontainer {
+		width: 450px;
+		margin:auto;
+		background-color: #f6f6f6;
+		border-left: 20px solid #f6f6f6;
+		border-right: 20px solid #f6f6f6;
+	}	
+	
+	/*========= Boxen Layout ========*/
+	
+	#headcontainer{
+		width: 450px;
+		border-bottom: 1px solid #dbdbdb;
+	}
+	#headcontainer p img{
+		max-width: 450px;
+		width: fit-content;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	#footercontainer {
+		clear: both;
+		border-top: 1px solid #dbdbdb;
+		width: 450px;
+		padding: 5px 0px;
+		margin-top: 0px;
+	}
+	
+	#subnavi{
+		float: left;
+		width: 70px;
+		height: 40px;
+		background-color: #f6f6f6;
+		margin: 0;
+		list-style-type: none;
+		white-space: nowrap;
+		font-size: 11px;
+		font-family: Helvetica, Verdana, Arial, sans-serif;
+		color: black;
+		text-decoration: none;
+	}
+	
+	#content{
+		border-left: 1px solid #dbdbdb;
+		background-color: #f6f6f6;
+		float: left;
+		width: 379px;
+		
+	} 
+	#content p{
+		width: 348px;
+		text-align: justify;
+
+	}
+	.headline{
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 12px;
+		font-weight: bold;
+		border-bottom: 1px solid #dbdbdb;
+		color: #313131;
+		display: block;
+		margin: 10px 0px 10px 30px;
+	}
+	/*========= Navigation ========*/
+#navi {
+	height: 28px;
+	width: 450px;
+	background-image: url(layout/navi_border.gif);
+	background-repeat: repeat-x;
+	list-style-type: none;
+}
+
+}
