@@ -1,6 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<!-- Sidebar Icons -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>| Stefan Schramm | root studio |</title>
 <link href="../css.css" rel="stylesheet" type="text/css" />
@@ -9,20 +11,41 @@
 <body>
 <div class="div" id="centercontainer">
   <div class="div" id="headcontainer">
-    <p align="right"><span class="language"><a href="../de/diskografie_de.htm" class="active">deutsch</a></span> <span class="language">&#8226;</span> <span class="language"><a href="../en/diskografie_en.htm" class="active">englisch</a></span><span class="headline"><a name="top" id="top"></a></span>
-      <img src="../layout/root_header.jpg" alt="" width="640" /></p>
-    <div class="div" id="navi">	
-<ul>
-			<li><a href="../index.htm">Home</a></li>
-			<li><a href="diskografie_en.htm"><strong>Projects</strong></a></li>
-			<li><a href="biografie_en.htm">Biography</a></li>
-			<li><a href="kontakt_en.htm">Contact</a></li>
-
-	  </ul>
-		  
+	<div class="above_picture">
+        <p align="right">
+          <span class="language"><a href="de/index_de.htm" class="active">deutsch</a></span>
+          <span class="language">&#8226;</span>
+          <span class="language"><a href="#">englisch</a></span>
+        </p>
+      </div>
+	  <div class="image">
+        <img src="../layout/root_header.jpg" alt="" />
+      </div>
+      <div class="div" id="navi">
+        <ul>
+          <li><a href="../index.htm">Home</a></li>
+          <li><a href="diskografie_en.htm"><strong>Projects</strong></a></li>
+          <li><a href="biografie_en.htm">Biography</a></li>
+          <li><a href="kontakt_en.htm">Contact</a></li>
+        </ul>
+      </div>
+  </div>
+  <div class="div" id="sub_division1">
+    <div class="sidebar">
+      <div class="logo_details">
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li><a href="diskografie_en.htm"><img src="../layout/bullet.gif" alt="bullet" width="4" height="8" border="0" /> Discography</a></li>
+			<li><a href="film_en.htm"><strong><img src="../layout/bullet.gif" alt="bullet" width="4" height="8" border="0" /> Film/TV</strong></a></li>
+			<li><a href="library_en.htm"><strong><img src="../layout/bullet.gif" alt="bullet" width="4" height="8" border="0" /> Library</strong></a></li>
+			<li><a href="advertising_en.htm"><strong><img src="../layout/bullet.gif" alt="bullet" width="4" height="8" border="0" /> Advertising</strong></a></li>
+			<li><a href="industry_en.htm"><strong><img src="../layout/bullet.gif" alt="bullet" width="4" height="8" border="0" /> Industrial/UI</strong></a></li>
+			<li><a href="other_en.htm"><strong><img src="../layout/bullet.gif" alt="bullet" width="4" height="8" border="0" /> Other works</strong></a></li>
+      </ul>
     </div>
   </div>
-  <div class="div" id="subnavi">
+  <!-- <div class="div" id="subnavi">
      	<ul>
 			<li><a href="diskografie_en.htm"><img src="../layout/bullet.gif" alt="bullet" width="4" height="8" border="0" /> Discography</a></li>
 			<li><a href="film_en.htm"><strong><img src="../layout/bullet.gif" alt="bullet" width="4" height="8" border="0" /> Film/TV</strong></a></li>
@@ -31,10 +54,9 @@
 			<li><a href="industry_en.htm"><strong><img src="../layout/bullet.gif" alt="bullet" width="4" height="8" border="0" /> Industrial/UI</strong></a></li>
 			<li><a href="other_en.htm"><strong><img src="../layout/bullet.gif" alt="bullet" width="4" height="8" border="0" /> Other works</strong></a></li>
 	</ul>
-    </div>
+    </div> -->
   <div class="div" id="content">
     <ul>
-
 		  <li>
 	     <p class="contentmore">Selected albums are available at the <a href="http://root-music.com" target=" ">root-music online shop</a>.</p>	  </li>
 	  
@@ -297,5 +319,18 @@ rainchild - rhythm of the sea</p>
     <div align="right"><span class="footer">root studio &#8226; Stefan Schramm &#8226; Johann-Biersack-Str. 27a &#8226; 82340 Feldafing &#8226; Germany</span></div>
   </div>
 </div>
+
+<script>
+	window.onload = function(){
+	const sidebar = document.querySelector(".sidebar");
+	const closeBtn = document.querySelector("#btn");
+  
+	closeBtn.addEventListener("click",function(){
+		sidebar.classList.toggle("open")
+	})
+  
+  }
+  </script>
+
 </body>
 </html>
