@@ -318,49 +318,42 @@ body {
 
 /* ===== Contact Page =====  */
 
-.social_icons i {
-  color: white;
-  line-height: 65px;
-  min-width: 50px;
-  text-align: center;
-}
 
 .social_icons ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 20px 0px;
+  margin: 10px 0px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .social_icons ul li {
   margin: 5px 5px;
   list-style: none;
 }
-
-ul i {
-  background-color: #9c5926;
-}
-
 .social_icons li i {
-  height: 32px;
-  line-height: 30px;
-  font-size: 30px;
-  border-radius: 5px;
-  color: black;
-}
-.social_icons li i svg {
-  height: 23px;
-  width: 50px;
-  color: white;
   background-color: #9c5926;
-  line-height: 35px;
-  font-size: 17px;
-  border-radius: 5px;
-  padding: 1px;
-  margin-top: 2px;
+  height: 48px;
+  line-height: 50px;
+  min-width: 48px;
+  font-size: 30px;
+  border-radius: 50%;
+  color: black;
+  text-align: center;
 }
 
+.social_icons li p{
+  font-size: 35px;
+  color: black;
+  height: 50px;
+}
+.social_icons li span{
+  border-radius: 50%;
+  padding: 0px 12px 0px 12px;
+  background-color: #9c5926;
+
+}
 
 /* Sprach-Wahl
 --------------------------------------------------*/
