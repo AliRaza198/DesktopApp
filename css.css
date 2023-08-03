@@ -342,6 +342,10 @@ body {
   color: black;
   text-align: center;
 }
+.social_icons li i:hover {
+  background-color: white;
+  border: 1px solid black;
+}
 
 .social_icons li p{
   font-size: 35px;
@@ -352,7 +356,10 @@ body {
   border-radius: 50%;
   padding: 0px 12px 0px 12px;
   background-color: #9c5926;
-
+}
+.social_icons li span:hover{
+  background-color: white;
+  border: 1px solid black;
 }
 
 /* Sprach-Wahl
